@@ -13,7 +13,10 @@ int main (void)
 			++counter;
 		}
 	}
-	printf("product of even numbers: %i\n", )
+	printf("number ofeven numbers: %i\n", counter);
+	
+	
+	return 0;
 
 
 }
