@@ -351,5 +351,6 @@ int Mathsquiz(){
 					printf("Final score is %i\n", score);
 					break;
 					}
-				}																																		
+				}	
+	return 0;																																	
 }

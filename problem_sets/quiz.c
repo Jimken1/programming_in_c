@@ -1,11 +1,12 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 int score = 0;
 
 
 #include "mathquiz.h"
 #include "compquiz.h"
-	
+#include "geographyquiz.h"
 
 
 int menu(){
@@ -55,6 +56,28 @@ int menu(){
 		
 		case 2 :
 			compquiz();
+			int q;
+			printf("would you like to try again(1/0) ");
+			scanf("%i", &q);
+			switch (q)
+				{
+				
+					case 1: 
+						menu();
+					break;
+					
+					case 0 :
+						printf("quitting thank you😁️");
+					break;
+					
+					default :
+						printf("invalid input program terminated exiting thank you\n");
+					break;	
+					
+				}
+			
+			printf("\n");
+			
 			break;
 		
 		case 3 :
@@ -78,7 +101,7 @@ int menu(){
 			}
 		
 
-
+	return 0;
 }
 
 int main (void)
