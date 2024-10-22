@@ -1,13 +1,13 @@
 #include <string.h>
 char *compquiz(){
-	char *arr[10] = {"1. who is regarded as the father of computer? ", "2. what is the  name of base 16? ", "3. what is the name of base 2? ", "4. what is the name of base 8? ", "5. convert 10 to binary ", "6. which part of computer is an input device a.speaker b.printer c.mouse d.monitor  ", "7. convert 101 to base 10 "};
+	char *arr[10] = {"1. who is regarded as the father of computer? ", "2. what is the  name of base 16? ", "3. what is the name of base 2? ", "4. what is the name of base 8? ", "5. convert 10 to binary ", "6. which part of computer is an input device a.speaker b.printer c.mouse d.monitor  ", "7. convert 101 to base 10 ", "8. the monitor is an ___ a.input device b.output device c.all of the above d.none of the above", "9. "};
 
 		
 		//first question
 		printf("%s", arr[0]);
 		char * v;
 		scanf("%s", &v);
-		if (v == "charlesbabbage"){
+		if (v == "charles babbage"){
 			printf("correct!!\n");
 			score += 10;
 			printf ("\n");
@@ -42,7 +42,7 @@ char *compquiz(){
 		printf("%s", arr[1]);
 		char * c;
 		scanf("%s", &c);
-		if (c = "charlesbabbage"){
+		if (c == "hexadecimal"){
 			printf("correct!!\n");
 			score += 10;
 			printf ("\n");
@@ -55,7 +55,7 @@ char *compquiz(){
 			printf("%s", arr[1]);
 			char * br;
 			scanf("%s", &br);
-				if (br == "charles"){
+				if (br == "hexadecimal"){
 					printf("correct!!\n");
 					score += 10;
 					printf ("\n");
@@ -73,9 +73,9 @@ char *compquiz(){
 					}
 		//Third question
 		printf("%s", arr[2]);
-		int d;
-		scanf("%i", &d);
-		if (d == 100){
+		char *d;
+		scanf("%s", &d);
+		if (d == "binary"){
 			printf("correct!!\n");
 			score += 10;
 			printf ("\n");
@@ -86,31 +86,29 @@ char *compquiz(){
 		else{
 			printf("wrong, try again\n");
 			printf("%s", arr[2]);
-			int e;
-			scanf("%i", &e);
-				switch (e)
-				{
-					case 100:
-						printf("correct!!\n");
-						score += 5;
-						printf ("\n");
-						printf("score = %i\n", score);
-					break;
+			char * e;
+			scanf("%s", &e);
+				if (e == "binary"){
+					printf("correct!!\n");
+					score += 10;
+					printf ("\n");
+					printf("score = %i\n", score);
 					
-					default :
+					
+				}
+								
+				else{
 					printf("question failed\n");
-					break;
 					printf("\n");
 					printf("score = %i\n", score);
-					}
-				}		
-				
-				
+					
+				}
+			}
 		//Fourth question
 		printf("%s", arr[3]);
-		int e;
-		scanf("%i", &e);
-		if (e == 350){
+		char * e;
+		scanf("%s", &e);
+		if (e == "octadecimal"){
 			printf("correct!!\n");
 			score += 10;
 			printf ("\n");
@@ -121,31 +119,31 @@ char *compquiz(){
 		else{
 			printf("wrong, try again\n");
 			printf("%s", arr[3]);
-			int e;
-			scanf("%i", &e);
-				switch (e)
-				{
-					case 350:
-						printf("correct!!\n");
-						score += 5;
-						printf ("\n");
-						printf("score = %i\n", score);
-					break;
+			char * e;
+			scanf("%s", &e);
+				if (e == "octadecimal"){
+					printf("correct!!\n");
+					score += 10;
+					printf ("\n");
+					printf("score = %i\n", score);
 					
-					default :
+					
+				}
+								
+				else{
 					printf("question failed\n");
 					printf("\n");
 					printf("score = %i\n", score);
-					break;
-					}
-				}		
+					
+				}
+			}		
 			
 			
 		//Fifth question
 		printf("%s", arr[4]);
 		int f;
 		scanf("%i", &f);
-		if (f == 4){
+		if (f == 1010){
 			printf("correct!!\n");
 			score += 10;
 			printf ("\n");
@@ -158,29 +156,29 @@ char *compquiz(){
 			printf("%s", arr[4]);
 			int e;
 			scanf("%i", &e);
-				switch (e)
-				{
-					case 4:
-						printf("correct!!\n");
-						score += 5;
-						printf ("\n");
-						printf("score = %i\n", score);
-					break;
+				if (e == 1010){
+					printf("correct!!\n");
+					score += 10;
+					printf ("\n");
+					printf("score = %i\n", score);
 					
-					default :
+					
+				}
+								
+				else{
 					printf("question failed\n");
 					printf("\n");
 					printf("score = %i\n", score);
-					break;
-					}
-				}	
+					
+				}
+			}	
 				
 				
 		//Sixth question
 		printf("%s", arr[5]);
-		int g;
-		scanf("%i", &g);
-		if (g == 8){
+		char g;
+		scanf("%c", &g);
+		if (g == 'c'){
 			printf("correct!!\n");
 			score += 10;
 			printf ("\n");
@@ -191,24 +189,25 @@ char *compquiz(){
 		else{
 			printf("wrong, try again\n");
 			printf("%s", arr[5]);
-			int e;
-			scanf("%i", &e);
-				switch (e)
-				{
-					case 8:
-						printf("correct!!\n");
-						score += 5;
-						printf ("\n");
-						printf("score = %i\n", score);
-					break;
+			char e;
+			scanf("%c", &e);
+				if (e == 'c'){
+					printf("correct!!\n");
+					score += 10;
+					printf ("\n");
+					printf("score = %i\n", score);
 					
-					default :
+					
+				}
+								
+				else{
 					printf("question failed\n");
 					printf("\n");
 					printf("score = %i\n", score);
-					break;
-					}
+					
 				}
+					}
+			}
 				
 				
 				
@@ -216,7 +215,7 @@ char *compquiz(){
 		printf("%s", arr[6]);
 		int h;
 		scanf("%i", &h);
-		if (h == 360){
+		if (h == 101){
 			printf("correct!!\n");
 			score += 10;
 			printf ("\n");
@@ -229,30 +228,30 @@ char *compquiz(){
 			printf("%s", arr[6]);
 			int e;
 			scanf("%i", &e);
-				switch (e)
-				{
-					case 360:
-						printf("correct!!\n");
-						score += 5;
-						printf ("\n");
-						printf("score = %i\n", score);
-					break;
+				if (e == 101){
+					printf("correct!!\n");
+					score += 10;
+					printf ("\n");
+					printf("score = %i\n", score);
 					
-					default :
+					
+				}
+								
+				else{
 					printf("question failed\n");
 					printf("\n");
 					printf("score = %i\n", score);
-					break;
-					}
+					
 				}
+			}
 				
 				
 				
 		//Eighth question
 		printf("%s", arr[7]);
-		int i;
-		scanf("%i", &i);
-		if (i == 75){
+		char i;
+		scanf("%c", &i);
+		if (i == 'b'){
 			printf("correct!!\n");
 			score += 10;
 			printf ("\n");
@@ -263,24 +262,24 @@ char *compquiz(){
 		else{
 			printf("wrong, try again\n");
 			printf("%s", arr[7]);
-			int e;
-			scanf("%i", &e);
-				switch (e)
-				{
-					case 75:
-						printf("correct!!\n");
-						score += 5;
-						printf ("\n");
-						printf("score = %i\n", score);
-					break;
+			char e;
+			scanf("%c", &e);
+				if (e == 'b'){
+					printf("correct!!\n");
+					score += 10;
+					printf ("\n");
+					printf("score = %i\n", score);
 					
-					default :
+					
+				}
+								
+				else{
 					printf("question failed\n");
 					printf("\n");
 					printf("score = %i\n", score);
-					break;
-					}
+					
 				}
+			}
 				
 				
 		//Ninth question
