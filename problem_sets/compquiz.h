@@ -1,10 +1,10 @@
 #include <string.h>
 char *compquiz(){
-	char *arr[10] = {"1. who is regarded as the father of computer? ", "2. what is the  name of base 16? ", "3. what is the name of base 2? ", "4. what is the name of base 8? ", "5. convert 10 to binary ", "6. which part of computer is an input device a.speaker b.printer c.mouse d.monitor  ", "7. convert 101 to base 10 ", "8. the monitor is an ___ a.input device b.output device c.all of the above d.none of the above", "9. "};
+	char * arr2[10] = {"1. who is regarded as the father of computer? ", "2. what is the  name of base 16? ", "3. what is the name of base 2? ", "4. what is the name of base 8? ", "5. convert 10 to binary ", "6. which part of computer is an input device a.speaker b.printer c.mouse d.monitor  ", "7. convert 101 to base 10 ", "8. the monitor is an ___ a.input device b.output device c.all of the above d.none of the above", "9.which of these is an output device a.mouse b.keyboard c.scanner d.monitor ", "10. which of these is used to collect audio input __ a.microphone b.keyboard c.speaker d.gamepad"};
 
 		
 		//first question
-		printf("%s", arr[0]);
+		printf("%s", arr2[0]);
 		char * v;
 		scanf("%s", &v);
 		if (v == "charles babbage"){
@@ -12,12 +12,12 @@ char *compquiz(){
 			score += 10;
 			printf ("\n");
 			printf("score = %i\n", score);
-			
+		}
 				
-			}
+			
 		else{
 			printf("wrong, try again\n");
-			printf("%s", arr[0]);
+			printf("%s", arr2[0]);
 			char *b;
 			scanf("%s", &b);
 				if (b == "charles babbage"){
@@ -36,10 +36,12 @@ char *compquiz(){
 				
 				
 		}
+		
+		
 				
 		
 		//second question
-		printf("%s", arr[1]);
+		printf("%s", arr2[1]);
 		char * c;
 		scanf("%s", &c);
 		if (c == "hexadecimal"){
@@ -52,7 +54,7 @@ char *compquiz(){
 		}
 		else{
 			printf("wrong, try again\n");
-			printf("%s", arr[1]);
+			printf("%s", arr2[1]);
 			char * br;
 			scanf("%s", &br);
 				if (br == "hexadecimal"){
@@ -72,7 +74,7 @@ char *compquiz(){
 				}
 					}
 		//Third question
-		printf("%s", arr[2]);
+		printf("%s", arr2[2]);
 		char *d;
 		scanf("%s", &d);
 		if (d == "binary"){
@@ -85,7 +87,7 @@ char *compquiz(){
 		}
 		else{
 			printf("wrong, try again\n");
-			printf("%s", arr[2]);
+			printf("%s", arr2[2]);
 			char * e;
 			scanf("%s", &e);
 				if (e == "binary"){
@@ -105,7 +107,7 @@ char *compquiz(){
 				}
 			}
 		//Fourth question
-		printf("%s", arr[3]);
+		printf("%s", arr2[3]);
 		char * e;
 		scanf("%s", &e);
 		if (e == "octadecimal"){
@@ -118,7 +120,7 @@ char *compquiz(){
 		}
 		else{
 			printf("wrong, try again\n");
-			printf("%s", arr[3]);
+			printf("%s", arr2[3]);
 			char * e;
 			scanf("%s", &e);
 				if (e == "octadecimal"){
@@ -140,7 +142,7 @@ char *compquiz(){
 			
 			
 		//Fifth question
-		printf("%s", arr[4]);
+		printf("%s", arr2[4]);
 		int f;
 		scanf("%i", &f);
 		if (f == 1010){
@@ -153,7 +155,7 @@ char *compquiz(){
 		}
 		else{
 			printf("wrong, try again\n");
-			printf("%s", arr[4]);
+			printf("%s", arr2[4]);
 			int e;
 			scanf("%i", &e);
 				if (e == 1010){
@@ -175,7 +177,7 @@ char *compquiz(){
 				
 				
 		//Sixth question
-		printf("%s", arr[5]);
+		printf("%s", arr2[5]);
 		char g;
 		scanf("%c", &g);
 		if (g == 'c'){
@@ -188,7 +190,7 @@ char *compquiz(){
 		}
 		else{
 			printf("wrong, try again\n");
-			printf("%s", arr[5]);
+			printf("%s", arr2[5]);
 			char e;
 			scanf("%c", &e);
 				if (e == 'c'){
@@ -207,12 +209,13 @@ char *compquiz(){
 					
 				}
 					}
-			}
+			
+			
 				
 				
 				
 		//Seventh question
-		printf("%s", arr[6]);
+		printf("%s", arr2[6]);
 		int h;
 		scanf("%i", &h);
 		if (h == 101){
@@ -225,7 +228,7 @@ char *compquiz(){
 		}
 		else{
 			printf("wrong, try again\n");
-			printf("%s", arr[6]);
+			printf("%s", arr2[6]);
 			int e;
 			scanf("%i", &e);
 				if (e == 101){
@@ -248,7 +251,7 @@ char *compquiz(){
 				
 				
 		//Eighth question
-		printf("%s", arr[7]);
+		printf("%s", arr2[7]);
 		char i;
 		scanf("%c", &i);
 		if (i == 'b'){
@@ -261,7 +264,7 @@ char *compquiz(){
 		}
 		else{
 			printf("wrong, try again\n");
-			printf("%s", arr[7]);
+			printf("%s", arr2[7]);
 			char e;
 			scanf("%c", &e);
 				if (e == 'b'){
@@ -283,10 +286,10 @@ char *compquiz(){
 				
 				
 		//Ninth question
-		printf("%s", arr[8]);
-		int j;
-		scanf("%i", &j);
-		if (j == 2500){
+		printf("%s", arr2[8]);
+		char j;
+		scanf("%c", &j);
+		if (j == 'd'){
 			printf("correct!!\n");
 			score += 10;
 			printf ("\n");
@@ -296,33 +299,33 @@ char *compquiz(){
 		}
 		else{
 			printf("wrong, try again\n");
-			printf("%s", arr[8]);
-			int e;
-			scanf("%i", &e);
-				switch (e)
-				{
-					case 2500:
-						printf("correct!!\n");
-						score += 5;
-						printf ("\n");
-						printf("score = %i\n", score);
-					break;
+			printf("%s", arr2[8]);
+			char e;
+			scanf("%c", &e);
+				if (e == 'd'){
+					printf("correct!!\n");
+					score += 10;
+					printf ("\n");
+					printf("score = %i\n", score);
 					
-					default :
+					
+				}
+								
+				else{
 					printf("question failed\n");
 					printf("\n");
 					printf("score = %i\n", score);
-					break;
-					}
+					
 				}
+			}
 				
 				
 				
 		//Tenth question
-		printf("%s", arr[9]);
-		int k;
+		printf("%s", arr2[9]);
+		char k;
 		scanf("%i", &k);
-		if (k == 4){
+		if (k == 'a'){
 			printf("correct!!\n");
 			score += 10;
 			printf ("\n");
@@ -332,24 +335,27 @@ char *compquiz(){
 		}
 		else{
 			printf("wrong, try again\n");
-			printf("%s", arr[9]);
-			int e;
-			scanf("%i", &e);
-				switch (e)
-				{
-					case 4:
-						printf("correct!!\n");
-						score += 5;
-						printf ("\n");
-						printf("Final score is %i\n", score);
-					break;
+			printf("%s", arr2[9]);
+			char e;
+			scanf("%c", &e);
+				if (e == 'a'){
+					printf("correct!!\n");
+					score += 10;
+					printf ("\n");
+					printf("score = %i\n", score);
 					
-					default :
+					
+				}
+								
+				else{
 					printf("question failed\n");
 					printf("\n");
-					printf("Final score is %i\n", score);
-					break;
-					}
+					printf("score = %i\n", score);
+					
 				}
-	return 0;																																		
+				
+				
+																																	
+		}
+	return 0;
 }
