@@ -1,4 +1,5 @@
 #include <string.h>
+#include <stdio.h>
 char *compquiz(){
 	char * arr2[10] = {"1. who is regarded as the father of computer? ", "2. what is the  name of base 16? ", "3. what is the name of base 2? ", "4. what is the name of base 8? ", "5. convert 10 to binary ", "6. which part of computer is an input device a.speaker b.printer c.mouse d.monitor  ", "7. convert 101 to base 10 ", "8. the monitor is an ___ a.input device b.output device c.all of the above d.none of the above", "9.which of these is an output device a.mouse b.keyboard c.scanner d.monitor ", "10. which of these is used to collect audio input __ a.microphone b.keyboard c.speaker d.gamepad"};
 

@@ -4,8 +4,9 @@
 int score = 0;
 
 
-#include "mathquiz.h"
-#include "compquiz.h"
+
+#include "mathquiz2.h"
+#include "compquiz2.h"
 #include "geographyquiz.h"
 
 
@@ -29,7 +30,7 @@ int menu(){
 	switch (i)
 	{
 		case 1 :
-			Mathsquiz();
+			Mathsquiz2();
 			int t;
 			printf("would you like to try again(1/0) ");
 			scanf("%i", &t);
@@ -55,11 +56,12 @@ int menu(){
 			break;
 		
 		case 2 :
-			compquiz();
-			int q;
+				
+			compquiz2();
+			int g;
 			printf("would you like to try again(1/0) ");
-			scanf("%i", &q);
-			switch (q)
+			scanf("%i", &g);
+			switch (g)
 				{
 				
 					case 1: 
@@ -77,7 +79,9 @@ int menu(){
 				}
 			
 			printf("\n");
-			
+				
+					
+						
 			break;
 		
 		case 3 :
