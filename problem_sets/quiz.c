@@ -86,6 +86,30 @@ int menu(){
 		
 		case 3 :
 		
+			geoquiz();
+			int e;
+			printf("would you like to try again(1/0) ");
+			scanf("%i", &e);
+			switch (e)
+				{
+				
+					case 1: 
+						menu();
+					break;
+					
+					case 0 :
+						printf("quitting thank you😁️");
+					break;
+					
+					default :
+						printf("invalid input program terminated exiting thank you\n");
+					break;	
+					
+				}
+			
+			printf("\n");
+				
+		
 			break;
 		
 		case 4 :

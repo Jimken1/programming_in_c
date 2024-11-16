@@ -1,7 +1,5 @@
 #include <iostream>
 using namespace std;
-#include "student.h"
-#include "teacher.h"
 #include "course.h"
 
 

@@ -1,11 +1,16 @@
 #include<iostream>
+#include "student.h"
+#include "teacher.h"
 
 class Course{
-	public:
-	Course (string name){
+
+	private:
+	string CourseName;
+	Student arr[3];
+
+	Teacher obj;
 	
-		setcoursename(name);	
-	}
+	public:
 	
 	void setcoursename(string v){
 	
@@ -17,7 +22,10 @@ class Course{
 	}
 	void set_stu_arr(Student obj1, Student obj2, Student obj3){
 		
-		arr[3]= {obj1, obj2, obj3}
+		//arr[3]= {obj1, obj2, obj3};
+		arr[0] = obj1;
+		arr[1] = obj2;
+		arr[2] = obj3;
 		
 	}
 	
@@ -26,11 +34,11 @@ class Course{
 		obj = obj1;
 	}
 	
-	
-	private:
-	string CourseName;
-	Student arr[3];
+	Course (string name){
+		
+			setcoursename(name);	
+		}
 
-	Teacher obj;
+	
 };
 

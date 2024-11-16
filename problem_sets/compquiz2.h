@@ -9,7 +9,8 @@ char *compquiz2(){
 		for (int e = 0; e <10; ++e){
 	
 		printf("%s", comp_arr[e]);
-		char *o;
+		char *o = malloc(30 * sizeof(char));
+		
 		scanf("%s", o);
 		float l = strcmp(o, comp_ans[e]);
 		if (l == 0){
@@ -22,7 +23,8 @@ char *compquiz2(){
 		else{
 			printf("wrong, try again\n");
 			printf("%s", comp_arr[e]);
-			char *q;
+			
+			char *q = malloc(30 * sizeof(char));
 			scanf("%s", q);
 			int y = strcmp(q, comp_ans[e]);
 			if(y == 0){
@@ -34,10 +36,10 @@ char *compquiz2(){
 			else{
 			
 				printf("wrong\n");
-				printf("score = %i", score);
+				printf("score = %i\n", score);
+				}
+			
 			}
-		
+			
 		}
-		
-	}
 	}
